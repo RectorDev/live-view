@@ -20,11 +20,12 @@ body {
   height: 100vh;
 }
 .player-container {
+
   margin-top: 2rem;
   position: relative;
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  border-radius: 250px;
   overflow: hidden;
   display: flex;
   align-items: center;
