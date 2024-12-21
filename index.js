@@ -26,8 +26,8 @@ function onYouTubePlayerAPIReady() {
       rel: 0, // No related videos at the end
       iv_load_policy: 3, // No annotations
       fs: 0, // No fullscreen button
-      autoplay: 1,
-    },
+      autoplay: 1
+    }
   });
 }
 
