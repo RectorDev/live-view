@@ -24,7 +24,7 @@ display:flex;
   position: relative;
   width: 360px;
   height: 360px;
-  border-radius: 180px;
+  border-radius: 50%;
   overflow: hidden;
   align-items: center;
   justify-content: center;
