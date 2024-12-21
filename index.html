@@ -7,26 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="ytplayer"></div>
+    <div class="player-container">
+      <div id="ytplayer"></div>
+    </div>
+    <div class="control-panel">
+      <h1 id="video-title"></h1>
+      <div id="player-duration">
+        <p id="min-duration">00</p><p>:</p><p id="sec-duration">00</p>
+      </div>
+      <div class="audio-control">
+        <Button id="speaker">O</Button>
+        <input id="volume" type="range">
+        <p id="volume-num">100</p>
+        
 
-    <script>
-      // Load the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/player_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    
-      // Replace the 'ytplayer' element with an <iframe> and
-      // YouTube player after the API code downloads.
-      var player;
-      function onYouTubePlayerAPIReady() {
-        player = new YT.Player('ytplayer', {
-          height: '360',
-          width: '640',
-          videoId: 'M7lc1UVf-VE'
-          ,allow:'auto-play'
-        });
-      }
-    </script>
+      </div>
+      <div class="video-control">
+        <button id="previous">previous</button>
+        <button id="next">next</button>
+
+      </div>
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

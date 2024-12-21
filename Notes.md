@@ -41,3 +41,18 @@ Depending on your selection, this page calls one of the following API functions:
  cueVideoByUrl
  cuePlaylist
 
+
+
+    -- Make a title of radio that is playing 
+    -- Radio list 
+    -- Mute button
+    -- volume range
+    -- Play / Pause button
+    -- theme switchs
+    -- visualizer
+    -- motional background
+    -- Popout button  (OPTIONAL)  
+
+ ## Tips
+  -- Radio list can be an slider 😊
+  -- 
