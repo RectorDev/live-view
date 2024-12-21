@@ -19,7 +19,7 @@ body {
   height: 100vh;
 }
 .player-container {
-
+display:flex;
   margin-top: 2rem;
   position: relative;
   width: 360px;
