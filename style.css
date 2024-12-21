@@ -33,6 +33,7 @@ shrink:1;
   box-shadow: 0 4px 10px black;
 }
 iframe {
+width:180px;
 aspect-ratio:1/1;
   transform: scale(4);
   transform-origin: center;
