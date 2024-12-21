@@ -26,7 +26,8 @@ body {
   height: 360px;
   border-radius: 180px;
   overflow: hidden;
-
+flex:0;
+shrink:1;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px black;
