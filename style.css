@@ -9,7 +9,6 @@ html {
   background-image: url(./image/art2.png);
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -20,13 +19,13 @@ body {
 
 }
 .player-container {
+display:flex;
   margin-top: 2rem;
   position: relative;
   width: 360px;
   height: 360px;
   border-radius: 50%;
   overflow: hidden;
-  display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px black;
