@@ -144,9 +144,9 @@ const radios = document.querySelector(".radio-list");
 radios.innerHTML = radioList
   .map((element) => {
     return `<div class="radio-item">
-      <h3>${element.title}</h3>
-      <p>Channel: ${element.Channel}</p>  
-      <button onclick="loadPlaylist('${element.Key}')">Play Playlist</button>
+      <h3 class="radio-title">${element.title}</h3>
+      <p class="radio-desc">${element.Channel}</p>  
+      <button class="radio-btn" onclick="loadPlaylist('${element.Key}')">Play</button>
     </div>`;
   })
   .join("");
