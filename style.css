@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-    border: none;
+  border: none;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,6 +8,7 @@
 html {
   background-image: url(./image/art2.png);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 body {
@@ -16,10 +17,9 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
 .player-container {
-display:flex;
+  display: flex;
   margin-top: 2rem;
   position: relative;
   width: 360px;
@@ -41,24 +41,74 @@ iframe {
 }
 
 .control-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 90%;
+  min-width: 375px;
   box-shadow: 0 0 15px -5px white;
   border: 1px solid white;
   border-radius: 25px;
-  padding: 5rem 10rem;
+  padding: 0.5rem 1rem;
   margin-top: 5rem;
   background-image: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0.3),
     rgb(2, 2, 2, 0.3)
   );
-
 }
 
-#speaker{
-    padding: 1rem;
+#speaker {
+  padding: 1rem;
 }
 
+button {
+  padding: 1rem;
+  border-radius: 100px;
+  border: 2px solid black;
+  color: white;
+  text-shadow: 1px 1px black;
+  background-color: rgba(1, 1, 1, 0);
+  transition: all 200ms;
+}
 
-.video-control >*{
-    padding: 1rem;
+button:hover {
+  border: 2px solid white;
+  color: black;
+  background-color: white;
+}
+
+#video-title {
+  max-width: 20rem;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.radio-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.radio-title {
+  font-size: 0.9rem;
+}
+
+.radio-desc {
+  font-size: 0.7rem;
+}
+.radio-btn {
+  backdrop-filter: blur(50px);
+  padding: 0.5rem;
+  border: none;
+  background-image: radial-gradient(120deg, rgba(215, 219, 219, 0.5));
+}
+
+.radio-item{
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 50px;
 }
